@@ -12,8 +12,8 @@ before_script:
 
 
 script: 
-  - nosetests tests/*/*/*.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
-  - coverage run tests/*/*/*.py #tests/integration/gs/*.py
-  - coverage xml -o shippable/codecoverage/coverage.xml tests/*/*/*.py # tests/integration/gs/*.py
+  - nosetests tests/integration/gs/*.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
+  - coverage run tests/integration/gs/*.py
+  - coverage xml -o shippable/codecoverage/coverage.xml  tests/integration/gs/*.py
  #python --cov-report xml --cov tests/test.py unit --junit-xml=shippable/testresults/results.xml
 
