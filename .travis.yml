@@ -7,6 +7,7 @@ before_install:
 install: 
   - pip install --allow-all-external -r requirements.txt
   - sudo pip install coverage
+
 before_script:
   -  mkdir -p shippable/codecoverage shippable/testresults
 
