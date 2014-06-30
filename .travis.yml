@@ -4,6 +4,7 @@ python:
 
 before_install:
   - sudo apt-get install swig
+  
 install: 
   - pip install --allow-all-external -r requirements.txt
   - sudo pip install coverage
